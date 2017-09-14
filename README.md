@@ -5,3 +5,4 @@ Live demo available at https://nikx.io/card-stack.
 Made with Angular.
 
 # Preview
+![Card Stack Preview](images/cardstack.png)
