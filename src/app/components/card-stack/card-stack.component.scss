@@ -1,0 +1,10 @@
+.card__stack {
+    list-style-type: none;
+    overflow-y: scroll;
+    height: 50vh;
+
+    .card__virtual {
+        width: 100%;
+        display: block;
+    }
+}

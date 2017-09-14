@@ -1,0 +1,8 @@
+<li class="card"
+    [class.card--hidden]="hidden"
+    [class.card--stacked]="stacked"
+    [style.transform]="'scale(' + scale + ')'"
+    #cardElement>
+    <span class="card__name">{{ name }}</span>
+    <span class="card__description">{{ description }}</span>
+</li>

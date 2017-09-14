@@ -1,0 +1,39 @@
+$innerPadding: 2rem;
+$outerMargin: 2rem;
+$borderRadius: 5px;
+
+.card {
+    background-color: white;
+    border-radius: $borderRadius;
+    box-shadow: 0 15px 35px rgba(60, 60, 60, .1), 0 5px 15px rgba(0, 0, 0, .05);
+    padding: $innerPadding;
+    opacity: 1;
+
+    width: calc(100% - #{2 * $outerMargin});
+    margin: $outerMargin auto;
+
+    transition: .2s opacity, .05s transform;
+
+    .card__name {
+        font-size: 1.2rem;
+        font-weight: bold;
+        display: block;
+        margin-bottom: .5rem;
+    }
+
+    .card__description {
+        font-size: .9rem;
+        color: #777;
+        display: block;
+    }
+
+    &.card--stacked {
+        position: sticky;
+        top: $outerMargin;
+        left: $outerMargin;
+    }
+
+    &.card--hidden {
+        opacity: 0;
+    }
+}
